@@ -4,15 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.malakdianadewi.museumbrawijaya.MainActivity">
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/home2"
+            android:paddingTop="165dp"
+            android:text="Welcome to
+MUSEUM BRAWIJAYA"
+            android:textAlignment="center"
+            android:textColor="@color/biru"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/biru">
 
     <TextView
-        android:layout_width="wrap_content"
+
+        android:id="@+id/ggl"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="16sp"
+        android:paddingTop="10dp"
+       android:textAlignment="center"
+        android:text="Buka di Google Maps"
+        android:textColor="#FFFF" />
+    <Button
+        android:id="@+id/maps"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="140dp"
+        android:layout_below="@id/ggl"
+        android:text="klik disini"
+        android:textColor="#ffff"
+        android:background="@color/coklat"
+
+        />
+
+</RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageButton
+                android:id="@+id/deskripsi"
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:text="DESKRIPSI"
+                android:textStyle="bold"
+                android:background="@color/orange"
+                android:src="@drawable/des"
+                android:scaleType="centerInside"
+                />
+
+            <ImageButton
+                android:id="@+id/fasilitas"
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:text="FASILITAS"
+                android:textStyle="bold"
+                android:background="@color/kuning"
+                android:src="@drawable/fas"
+                android:scaleType="centerInside"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageButton
+                android:id="@+id/gambar"
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:text="Gambar"
+                android:textStyle="bold"
+                android:background="@color/kuning"
+                android:src="@drawable/gam"
+                android:scaleType="centerInside"
+                />
+
+            <ImageButton
+                android:id="@+id/opini"
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:text="OPINI"
+                android:textStyle="bold"
+                android:background="@color/orange"
+                android:src="@drawable/opinion"
+                android:scaleType="centerInside"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

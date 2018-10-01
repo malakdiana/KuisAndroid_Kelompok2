@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Museum Brawijaya</string>
+    <string name="app_name">kuis1</string>
+    <string name="alamat">Jl. Ijen No.25 A, Gading Kasri, Klojen, Kota Malang, Jawa Timur 65115 </string>
+    <string name="opiniFer"> Museum nya bagus, koleksinya lengkap, bisa menambah wawasan dan ilmu pengetahuan. terimakasih museum brawijaya</string>
+    <string name="fer">Ferdiana R.C</string>
+    <string name="opiniElen"> Museum nya bagus, koleksinya lengkap, bisa menambah wawasan dan ilmu pengetahuan. terimakasih museum brawijaya</string>
+    <string name="elen">Verenca Okta Laila</string>
+
+    <string name="opiniPram"> Museum nya bagus, koleksinya lengkap, bisa menambah wawasan dan ilmu pengetahuan. terimakasih museum brawijaya</string>
+    <string name="pram">Hanifa Pramana</string>
+
+    <string name="opiniJihan"> Museum nya bagus, koleksinya lengkap, bisa menambah wawasan dan ilmu pengetahuan. terimakasih museum brawijaya</string>
+    <string name="jihan">Jihan Octavia</string>
+    <string name="opiniMal"> Museum nya bagus, koleksinya lengkap, bisa menambah wawasan dan ilmu pengetahuan. terimakasih museum brawijaya</string>
+    <string name="mal">Malak Diana Dewi</string>
 </resources>

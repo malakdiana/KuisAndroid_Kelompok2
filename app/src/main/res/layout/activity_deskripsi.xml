@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Deskripsi">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#9B4F0F">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#1E434C">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/back2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="20dp"
+                android:text="DESKRIPSI"
+                android:textColor="#C99E10"
+                android:layout_marginLeft="90dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="#1E434C"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/backNilai"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:src="@drawable/home2"/>
+            <ImageView
+                android:id="@+id/backNila"
+                android:layout_width="70dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:src="@drawable/home2"/>
+            <ImageView
+                android:id="@+id/backNila"
+                android:layout_width="70dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:src="@drawable/home2"/>
+            <ImageView
+                android:id="@+id/backNila"
+                android:layout_width="70dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:src="@drawable/home2"/>
+            <ImageView
+                android:id="@+id/backNila"
+                android:layout_width="70dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:src="@drawable/home2"/>
+        </LinearLayout>
+
+        //Membuat Linear Layout berisi tabel nilai dan button back
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#C99E10"
+            android:orientation="vertical"
+            >
+
+            // Button dari Layout nilai kembali ke layout home
+
+
+            //Membuat Scrool View sehingga ketika data melebihi content dpt di scroll
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                // Membuat tabel Nilai yang setiap tabel row berisi satu nilai , diberi weight 1 semua setiap row agar lurus dalam satu content
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tablelayoutid"
+                    android:layout_margin="5dp">
+
+                    <TableRow
+                        android:id="@+id/rowlay"
+                        android:background="#88000000"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="14dp"
+                            android:textColor="#FFF"
+                            android:text="Usaha untuk pendirian Museum Brawijaya telah dilakukan sejak tahun 1962 oleh Brigjend TNI (Purn) Soerachman (mantan Pangdam V/Brawijaya tahun 1959-1962). Pembangunan gedung museum kemudian mendapat dukungan Pemerintah Kota Malang dengan penyediaan lokasi tanah seluas 10.500 meter persegi, dan dukungan biaya dari Sdr.Martha, pemilik hotel di Tretes, Pandaan. Arsitek museum adalah Kapten Soemadi. Museum dibangun pada tahun 1967 dan selesai 1968. " />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="#FFF"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Nama Museum Brawijaya ditetapkan berdasarkan keputusan Pangdam V Brawijaya tanggal 16 April 1968 dengan sesanti (wejangan) 'Citra Uthapana Cakra' yang berarti sinar (citra) yang membangkitkan (uthapana) semangat/kekuatan (cakra). Sedangkan museum diresmikan pada tanggal 4 Mei 1968 yang terletak di Jl. Ijen, No. 25 A, Gading Kasri, Klojen, Gading Kasri, Klojen, Kota Malang, Jawa Timur " />
+                    </TableRow>
+
+
+
+                </TableLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gambar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="GAMBAR"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:paddingTop="20dp"
+        android:textColor="@color/kuning"
+        android:textStyle="bold"
+        android:background="@color/biru"
+        android:id="@+id/judul"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@color/kuning">
+            <ImageView
+                android:id="@+id/gb1"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/halaman"/>
+            <TextView
+                android:id="@+id/cap1"
+                android:layout_below="@id/gb1"
+                android:layout_width="160dp"
+                android:layout_height="17dp"
+                android:background="@color/coklat"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="15dp"
+                android:text="Halaman Depan"/>
+            <ImageView
+                android:id="@+id/gb2"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/gb1"
+                android:src="@drawable/gerbangmuseum"/>
+            <TextView
+                android:id="@+id/cap2"
+                android:layout_below="@id/gb2"
+                android:layout_toRightOf="@id/cap1"
+                android:layout_width="160dp"
+                android:layout_height="17dp"
+                android:background="@color/coklat"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="15dp"
+                android:text="Gerbang Museum"/>
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:id="@+id/gb3"
+                android:layout_below="@id/cap1"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="15dp"
+
+                android:src="@drawable/gerbongmaut"/>
+            <TextView
+                android:id="@+id/cap3"
+                android:layout_below="@id/gb3"
+
+                android:layout_width="160dp"
+                android:layout_height="17dp"
+                android:background="@color/coklat"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="15dp"
+                android:text="Gerbong Maut"/>
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:id="@+id/gb4"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/gb3"
+                android:layout_below="@id/gb2"
+                android:src="@drawable/perahusegigir"/>
+            <TextView
+                android:id="@+id/cap4"
+                android:layout_below="@id/gb3"
+                android:layout_toRightOf="@id/cap3"
+                android:layout_width="160dp"
+                android:layout_height="17dp"
+                android:background="@color/coklat"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="15dp"
+                android:text="Perahu Segigir"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

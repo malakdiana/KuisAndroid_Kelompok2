@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Opini">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="OPINI"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:textColor="@color/kuning"
+            android:textStyle="bold"
+            android:background="@color/biru"
+            android:id="@+id/judul"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judul">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/judul"
+                android:background="#9B4F0F"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/pertama"
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#C99E10"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:id="@+id/foto1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/hall" />
+
+                    <TextView
+                        android:id="@+id/opini1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/foto1"
+                        android:text="@string/opiniFer"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/opini1"
+                        android:layout_toRightOf="@id/foto1"
+                        android:text="@string/fer"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kedua"
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/pertama"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="#C99E10"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:id="@+id/foto2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/masjid" />
+
+                    <TextView
+                        android:id="@+id/opini2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/foto2"
+                        android:text="@string/opiniElen"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/opini2"
+                        android:layout_toLeftOf="@id/foto2"
+                        android:text="@string/elen"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ketiga"
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/kedua"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="#C99E10"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:id="@+id/foto3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/room" />
+
+                    <TextView
+                        android:id="@+id/opini3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/foto3"
+                        android:text="@string/opiniJihan"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/opini3"
+                        android:layout_toRightOf="@id/foto3"
+                        android:text="@string/jihan"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/keempat"
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/ketiga"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="#C99E10"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:id="@+id/foto4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/parkir" />
+
+                    <TextView
+                        android:id="@+id/opini4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/foto4"
+                        android:text="@string/opiniElen"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/opini4"
+                        android:layout_toLeftOf="@id/foto4"
+                        android:text="@string/elen"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/kelima"
+                    android:layout_width="320dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/keempat"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="#C99E10"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:id="@+id/foto5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/fas" />
+
+                    <TextView
+                        android:id="@+id/opini5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/foto5"
+                        android:text="@string/opiniJihan"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/opini5"
+                        android:layout_toRightOf="@id/foto5"
+                        android:text="@string/jihan"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
